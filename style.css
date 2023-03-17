@@ -1,0 +1,88 @@
+html body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+*{
+    border: 5px solid red;
+    box-sizing: border-box;
+}
+header{
+    height: 100vh;
+    border: 3px solid black;
+    background-color: #ffcc00;
+    display: flex;
+    justify-content: space-between; 
+}
+.container{
+    height: 100%;
+    border: 4px solid green;
+    display: flex;
+    flex-direction: column;
+}
+.radio-logo{
+    flex-grow: 20;
+}
+.player-info{
+    flex-grow: 1;
+}
+.play-button{
+    height: 100%;
+    display: flex;
+}
+/*NON TOCCARE DA SU IN POI*/
+
+.main-page{
+    height: 100%;
+    background-color: #660099;
+    display: flex;
+    flex-direction: column;
+}
+.piano{
+    height: 100%;
+    background-color: #ffcc00;
+    display: flex;
+    flex-direction: column;
+}
+.l.container{
+    height: 100%;
+    background-color: #0099ff;
+    display: flex;
+}
+.lupo{
+    background-color: #0099ff;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+.jazz-romania{
+    background-color: #0099ff;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+/*NON TOCCARE DA QUI IN POI*/
+.f-container{
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+}
+.mouth{
+    height: 100%;
+    background-color: #660099;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+.arrow{
+    height: 100%;
+    background-color: #ff3333;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+.pic{
+    align-self: center;
+}
