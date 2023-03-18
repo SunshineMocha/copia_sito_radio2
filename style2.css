@@ -1,0 +1,35 @@
+html body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+*{
+    box-sizing: border-box;
+    background-color: yellow;
+}
+.container{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.l{
+    width: 100vw;
+    background-color: yellow;
+    position: relative;
+    animation: anim-l 3s infinite linear;
+  }
+.r{
+    width: 100vw;
+    /*height: auto;*/
+    background-color: yellow;
+    position: relative;
+    animation: anim-r 3s infinite linear;
+  }
+  @keyframes anim-l {
+    0%   {left:0px;}
+    100%  {left:99%;}
+  }
+  @keyframes anim-r {
+    0%   {left:100%;}
+    100%  {left:0px;}
+  }

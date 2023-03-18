@@ -5,9 +5,19 @@ html body{
     width: 100%;
 }
 *{
-    border: 5px solid red;
+    /*border: 5px solid red;*/
     box-sizing: border-box;
 }
+
+a{
+    color: black;
+    text-decoration: none;
+}
+a::after{
+    color: black;
+    text-decoration: none;
+}
+
 header{
     height: 100vh;
     /*border: 3px solid black;*/
@@ -30,6 +40,7 @@ header{
 .play-button{
     height: 100%;
     display: flex;
+    padding-right: 50px;
 }
 /*NON TOCCARE DA SU IN POI*/
 
@@ -39,9 +50,86 @@ header{
     display: flex;
     flex-direction: column;
 }
+
+.howto{
+    height: 100%;
+    background-color: #ffcc00;
+}
+.FM{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.freq{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+.frm{
+    border-bottom: 1px solid black;
+    padding: 30px 20px 30px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.Online{
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.webs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+.web{
+    border-bottom: 1px solid black;
+    padding: 30px 20px 30px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.Devices{
+    text-align: right;
+}
+.dev{
+    border-bottom: 1px solid black;
+    padding: 30px 20px 30px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.topF{
+    border-top: 1px solid black;
+    margin-top: 20px;
+}
+.bottomD{
+    margin-bottom: 50px;
+}
+.lett{
+    display: flex;
+    justify-content: space-around;
+}
+.calendar-container{
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
 .piano{
     height: 100%;
     background-color: #ffcc00;
+    display: flex;
+    flex-direction: column;
+}
+.illu2{
+    height: 100%;
+    background-color: #660099;
+    display: flex;
+    flex-direction: column;
+}
+.illu3{
+    height: 100%;
+    background-color: #660099;
     display: flex;
     flex-direction: column;
 }
@@ -59,14 +147,136 @@ header{
 }
 .jazz-romania{
     background-color: #0099ff;
+    color: white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     flex-grow: 1;
 }
-.musicisti{
-    width: 100%;
+.top{
+    border-top: 1px solid white;
+    margin-top: 20px;
+}
+.bottom{
+    margin-bottom: 100px;
+}
+.gruppo{
+    border-bottom: 1px solid white;
+    padding: 30px 20px 30px 20px;
     color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.c-contacts{
+    height: 100%;
+    background-color: #ffcc00;
+    /*border: 10px solid red;*/
+    display: flex;
+    justify-content: space-between;
+}
+.cleft{
+    height: 100%;
+    /*border: 10px solid green;*/
+}
+.cright{
+    height: 100%;
+    /*border: 10px solid blue;*/
+}
+.contatto{
+    border-bottom: 1px solid black;
+    padding: 30px 20px 30px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.copyright{
+    padding: 30px 20px 30px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.anim-container{
+    height: 100%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: #ffcc00;
+}
+.l {
+    width: 450px;
+    background-color:#ffcc00;
+    position: relative;
     text-align: center;
+    animation: anim-l 3s infinite 0s linear;
+  }
+.r{
+    width: 450px;
+    background-color: #ffcc00;
+    position: relative;
+    text-align: center;
+    animation: anim-r 3s infinite 0.1s linear;
+  }
+  .l2{
+    width: 450px;
+    background-color:#ffcc00;
+    position: relative;
+    text-align: center;
+    animation: anim-l 3s infinite 0.2s linear;
+  }
+  @keyframes anim-l {
+    0%   {left:0px;}
+    100%  {left:70%;}
+  }
+  @keyframes anim-r {
+    0%   {left:70%;}
+    100%  {left:0px;}
+  }
+
+/*NON TOCCARE DA QUI IN POI*/
+.s-container{
+    /*width: 100%;
+    height: 100%;*/
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 50px;
+    padding: 0px 50px 0px 50px;
+    grid-template-areas: 
+    "st st ."
+    ". . u"
+    "d t ."
+    ". q ."
+    ". . c"
+    "s se .";
+}
+
+.mon{
+    grid-area: u;
+}
+.tue{
+    grid-area: d;
+}
+.wed{
+    grid-area: t;
+}   
+.thu{
+    grid-area: q;
+}
+.fri{
+    grid-area: c;
+}
+.sat{
+    grid-area: s;
+}
+.sun{
+    grid-area: se;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid black;    
+    padding: 10px;
+}
+.s-title{
+    grid-area: st;
 }
 
 /*NON TOCCARE DA QUI IN POI*/
